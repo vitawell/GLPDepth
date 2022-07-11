@@ -1,4 +1,6 @@
 datasets中增加coco2yolo.py转换DUO数据集标签为yolo的txt文件
+（增加xml22yolo.py转换urpc数据集标签）
+
 
 （GLP环境，除了配置文件还需安装Pytorch） 
 
