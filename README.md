@@ -1,5 +1,14 @@
 code中增加coco2yolo.py转换数据集标签为yolo的txt文件
 
+（GLP环境，除了配置文件还需安装Pytorch） 
+
+
+python ./code/test.py --ckpt_dir ./ckpt/best_model_nyu.ckpt --dataset imagepath --data_path ./datasets/seacu1/image --save_visualize 。近红远绿，几乎全红，改上色尺度后没有本来*255效果好。 
+
+
+更改test.py中伪彩色图代码，默认为COLORMAP_RAINBOW。改为_JET后几乎全蓝。 
+
+
 
 # Global-Local Path Networks for Monocular Depth Estimation with Vertical CutDepth [[Paper]](https://arxiv.org/abs/2201.07436)
 
