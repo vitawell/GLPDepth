@@ -1,4 +1,4 @@
-code中增加coco2yolo.py转换数据集标签为yolo的txt文件
+datasets中增加coco2yolo.py转换数据集标签为yolo的txt文件
 
 （GLP环境，除了配置文件还需安装Pytorch） 
 
