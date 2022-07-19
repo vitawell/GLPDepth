@@ -15,7 +15,7 @@ python ./code/test.py --ckpt_dir ./ckpt/best_model_nyu.ckpt --dataset imagepath 
 
 
 ![1920,1088](https://github.com/vitawell/GLPDepth/blob/main/img/28.jpg)
-GLP28.png
+GLP28.jpg
 ![640,380](https://github.com/vitawell/GLPDepth/blob/main/img/GLP28.jpg)
 AdaBins28.png
 ![640,380](https://github.com/vitawell/GLPDepth/blob/main/img/AdaBins28.png)
