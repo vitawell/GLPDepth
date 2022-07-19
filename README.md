@@ -14,7 +14,7 @@ python ./code/test.py --ckpt_dir ./ckpt/best_model_nyu.ckpt --dataset imagepath 
 数据增强Vertical CutDepth 在 GLPDepth/code/dataset/base_dataset.py 中
 
 
-![Image text](https://github.com/vitawell/GLPDepth/blob/main/img/28.jpg)
+![1920,1088](https://github.com/vitawell/GLPDepth/blob/main/img/28.jpg)
 
 ![Image text](https://github.com/vitawell/GLPDepth/blob/main/img/AdaBins28.png)
 
