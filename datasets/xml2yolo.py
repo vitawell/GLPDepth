@@ -4,7 +4,9 @@ import shutil
 import random
 
 
-classes = ["holothurian", "echinus", "scallop", "starfish"]  # 类别
+# classes = ["holothurian", "echinus", "scallop", "starfish"]  # 类别
+classes = ["seacucumber"]
+
 def convert(size, box):
     dw = 1. / size[0]
     dh = 1. / size[1]
@@ -20,7 +22,9 @@ def convert(size, box):
 
 
 def convert_annotation(image_id, img_dir , box_dir):
-    in_file = open('./tcdata/train/box/%s.xml' % (image_id))
+    if not os.path.exists('./seacu6/anno/%s.xml' % (image_id)): # 改路径
+        return
+    in_file = open('./seacu6/anno/%s.xml' % (image_id))  # 改路径
     out_file = open('%s/%s.txt' % (box_dir, image_id), 'w')  # 生成txt格式文件
     tree = ET.parse(in_file)
     root = tree.getroot()
@@ -38,15 +42,15 @@ def convert_annotation(image_id, img_dir , box_dir):
              float(xmlbox.find('ymax').text))
         bb = convert((w, h), b)
         out_file.write(str(cls_id) + " " + " ".join([str(a) for a in bb]) + '\n')
-    shutil.copy(os.path.join(image_dir,image_id+".jpg"), os.path.join(img_dir,image_id+".jpg"))
+    shutil.copy(os.path.join(image_dir,image_id+".jpg"), os.path.join(img_dir,image_id+".jpg")) # 改png
 
 
 
-
+# 改路径
 image_dir = "./tcdata/train/image/"
 box_dir = "./tcdata/train/box/"
 
-
+# 改路径
 train_img_dir = "./tmp_data/images/train"
 train_box_dir = "./tmp_data/labels/train"
 val_img_dir = "./tmp_data/images/val"
