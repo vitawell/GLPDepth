@@ -4,12 +4,8 @@ import shutil
 import random
 
 
-# classes = ["holothurian", "echinus", "scallop", "starfish"]  # 类别
-classes = ["seacucumber"]
 
-
-
-# 改路径
+# 改路径！按照iamges中train和val的划分来划分depth
 train_img_dir = "./seacu06/images/train"
 val_img_dir = "./seacu06/images/val"
 
