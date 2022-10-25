@@ -1,4 +1,7 @@
-datasets中增加xml2yolo.py转换urpc数据集标签为yolo的txt文件（并划分train/val）、增加coco2yolo.py转换DUO数据集标签为yolo的txt文件
+datasets中增加xml2yolo.py转换urpc数据集标签为yolo的txt文件（并划分train/val）、onlyxml2yolo.py只转换标签为txt文件("dog", "person","cat","tv","car","meatballs","marinara sauce","tomato soup","chicken noodle soup","french onion soup","chicken breast","ribs","pulled pork","hamburger","cavity","seaurchin")
+
+
+增加coco2yolo.py转换DUO数据集标签为yolo的txt文件
 
 
 （GLP环境，除了配置文件还需安装Pytorch） 
